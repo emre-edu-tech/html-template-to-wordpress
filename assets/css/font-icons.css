@@ -1,0 +1,479 @@
+
+/* Icon54
+-------------------------------------------------------*/
+@font-face {
+  font-family: 'Icon54';
+  src:
+    url('../fonts/Icon54.ttf?3rh4gs') format('truetype'),
+    url('../fonts/Icon54.woff?3rh4gs') format('woff'),
+    url('../fonts/Icon54.svg?3rh4gs#Icon54') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Icon54' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Book-Write:before {
+  content: "\e95d";
+}
+.icon-Books:before {
+  content: "\e965";
+}
+.icon-Chandelier:before {
+  content: "\e9a2";
+}
+.icon-Parabolic-Antenna-3:before {
+  content: "\eb11";
+}
+.icon-Triangle-Ruler:before {
+  content: "\ec52";
+}
+.icon-Israel:before {
+  content: "\e900";
+}
+.icon-Barn:before {
+  content: "\e942";
+}
+.icon-Barrow:before {
+  content: "\e943";
+}
+.icon-Brick:before {
+  content: "\e95b";
+}
+.icon-Church-1:before {
+  content: "\e97a";
+}
+.icon-Crain:before {
+  content: "\e995";
+}
+.icon-Cup-3:before {
+  content: "\e99c";
+}
+.icon-Drilling-Machine-2:before {
+  content: "\e9ba";
+}
+.icon-Drilling-Machine:before {
+  content: "\e9bb";
+}
+.icon-Firewall:before {
+  content: "\e9e2";
+}
+.icon-Hammer:before {
+  content: "\ea13";
+}
+.icon-Helmet:before {
+  content: "\ea26";
+}
+.icon-High-voltage:before {
+  content: "\ea27";
+}
+.icon-Hotel-1:before {
+  content: "\ea33";
+}
+.icon-Hotel-2:before {
+  content: "\ea34";
+}
+.icon-Hotel-3:before {
+  content: "\ea35";
+}
+.icon-Hotel-4:before {
+  content: "\ea36";
+}
+.icon-House-2:before {
+  content: "\ea38";
+}
+.icon-House-3:before {
+  content: "\ea39";
+}
+.icon-House-4:before {
+  content: "\ea3a";
+}
+.icon-House-7:before {
+  content: "\ea3d";
+}
+.icon-House-8:before {
+  content: "\ea3e";
+}
+.icon-House-9:before {
+  content: "\ea3f";
+}
+.icon-Jack-Hammer2:before {
+  content: "\ea4c";
+}
+.icon-Ladder:before {
+  content: "\ea5a";
+}
+.icon-Office-1:before {
+  content: "\eaca";
+}
+.icon-Office-2:before {
+  content: "\eacb";
+}
+.icon-Office-3:before {
+  content: "\eacc";
+}
+.icon-Office-4:before {
+  content: "\eacd";
+}
+.icon-Office-5:before {
+  content: "\eace";
+}
+.icon-Office-6:before {
+  content: "\eacf";
+}
+.icon-Paint-Brush:before {
+  content: "\eadd";
+}
+.icon-Paint-Bucket:before {
+  content: "\eade";
+}
+.icon-Paint-Roller:before {
+  content: "\eadf";
+}
+.icon-Plugin:before {
+  content: "\eaff";
+}
+.icon-Post-Office:before {
+  content: "\eb08";
+}
+.icon-Road-Roller:before {
+  content: "\eb38";
+}
+.icon-Saw:before {
+  content: "\eb40";
+}
+.icon-School:before {
+  content: "\eb41";
+}
+.icon-Shop:before {
+  content: "\eb56";
+}
+.icon-Shovel:before {
+  content: "\eb57";
+}
+.icon-Sydney:before {
+  content: "\eb92";
+}
+.icon-Theme:before {
+  content: "\eb9c";
+}
+.icon-Triangle-Ruler2:before {
+  content: "\ebaf";
+}
+.icon-Trowel-and-Brick:before {
+  content: "\ebb0";
+}
+.icon-Trowel-and-Wall:before {
+  content: "\ebb1";
+}
+.icon-Truck-1:before {
+  content: "\ebb2";
+}
+.icon-Windmill:before {
+  content: "\ebea";
+}
+.icon-Bad-1:before {
+  content: "\ec04";
+}
+.icon-Bad-2:before {
+  content: "\ec05";
+}
+.icon-Bad-4:before {
+  content: "\ec07";
+}
+.icon-Brick-Gouse:before {
+  content: "\ec0d";
+}
+.icon-Cabinet-1:before {
+  content: "\ec0e";
+}
+.icon-Cabinet-5:before {
+  content: "\ec12";
+}
+.icon-Change-House:before {
+  content: "\ec16";
+}
+.icon-Couch-1:before {
+  content: "\ec23";
+}
+.icon-Garage:before {
+  content: "\ec4d";
+}
+.icon-House-Dimensions:before {
+  content: "\ec5f";
+}
+.icon-House-Key-3:before {
+  content: "\ec63";
+}
+.icon-Key-Hold:before {
+  content: "\ec6a";
+}
+.icon-Wardeobe-1:before {
+  content: "\ecd5";
+}
+.icon-Wardrobe-Mirror:before {
+  content: "\ecd8";
+}
+.icon-Phone-InTalk:before {
+  content: "\e9a4";
+}
+.icon-Concrete-Truck:before {
+  content: "\eb42";
+}
+.icon-Crain-Truck:before {
+  content: "\eb5b";
+}
+.icon-Crop-Tool:before {
+  content: "\eb64";
+}
+.icon-Cup-1:before {
+  content: "\eb6b";
+}
+.icon-Cystern-Truck:before {
+  content: "\eb74";
+}
+.icon-Dispacher-1:before {
+  content: "\eba5";
+}
+.icon-Dispacher-2:before {
+  content: "\eba6";
+}
+.icon-Dumper-Truck:before {
+  content: "\ebf9";
+}
+.icon-Elevator:before {
+  content: "\ec13";
+}
+.icon-Excavator-1:before {
+  content: "\ec30";
+}
+.icon-Excavator-2:before {
+  content: "\ec31";
+}
+.icon-Fire-Alarm:before {
+  content: "\ec5e";
+}
+.icon-Hammer2:before {
+  content: "\ece6";
+}
+.icon-Hotel:before {
+  content: "\ed1c";
+}
+.icon-Isert-Tabel:before {
+  content: "\ed3a";
+}
+.icon-Jack-Hammer:before {
+  content: "\ed3c";
+}
+.icon-Lamp-1:before {
+  content: "\ed57";
+}
+.icon-Lamp-2:before {
+  content: "\ed58";
+}
+.icon-Light-Bulb:before {
+  content: "\ed7b";
+}
+.icon-Mail-Box2:before {
+  content: "\edbb";
+}
+.icon-Mining-Railcar:before {
+  content: "\edf2";
+}
+.icon-Paint-Bucket2:before {
+  content: "\ee70";
+}
+.icon-Paint-Format:before {
+  content: "\ee71";
+}
+.icon-Paper-Roll:before {
+  content: "\ee7b";
+}
+.icon-Pin:before {
+  content: "\eea6";
+}
+.icon-Ruler-1:before {
+  content: "\ef50";
+}
+.icon-Ruler-2:before {
+  content: "\ef51";
+}
+.icon-Ruler-Tool:before {
+  content: "\ef52";
+}
+.icon-Screwdriver2:before {
+  content: "\ef81";
+}
+.icon-Seatbelt:before {
+  content: "\ef91";
+}
+.icon-Shower-1:before {
+  content: "\efb9";
+}
+.icon-Stamp-2:before {
+  content: "\f006";
+}
+.icon-Temperature-Day:before {
+  content: "\f053";
+}
+.icon-Tools:before {
+  content: "\f07b";
+}
+.icon-Transmition-Tower:before {
+  content: "\f08a";
+}
+.icon-Truck-12:before {
+  content: "\f094";
+}
+.icon-Truck:before {
+  content: "\f096";
+}
+.icon-Umbrella:before {
+  content: "\f0a2";
+}
+.icon-Wall:before {
+  content: "\f0ea";
+}
+.icon-Water-Tap:before {
+  content: "\f0f1";
+}
+.icon-Winter-Temperature:before {
+  content: "\f118";
+}
+.icon-Wrench-1:before {
+  content: "\f129";
+}
+
+
+
+/* UI Icons
+-------------------------------------------------------*/
+@font-face {
+  font-family: 'ui-icons';
+  src: url('../fonts/ui-icons.eot?31292061');
+  src: url('../fonts/ui-icons.eot?31292061#iefix') format('embedded-opentype'),
+       url('../fonts/ui-icons.woff2?31292061') format('woff2'),
+       url('../fonts/ui-icons.woff?31292061') format('woff'),
+       url('../fonts/ui-icons.ttf?31292061') format('truetype'),
+       url('../fonts/ui-icons.svg?31292061#ui-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'ui-icons';
+    src: url('../fonts/ui-icons.svg?31292061#ui-icons') format('svg');
+  }
+}
+*/
+ 
+ [class^="ui-"]:before, [class*=" ui-"]:before {
+  font-family: "ui-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.ui-pin:before { content: '\e801'; } /* '' */
+.ui-play:before { content: '\e803'; } /* '' */
+.ui-star:before { content: '\e805'; } /* '' */
+.ui-star-empty:before { content: '\e806'; } /* '' */
+.ui-arrow-left:before { content: '\e875'; } /* '' */
+.ui-arrow-right:before { content: '\e876'; } /* '' */
+.ui-category:before { content: '\f097'; } /* '' */
+.ui-twitter:before { content: '\f099'; } /* '' */
+.ui-facebook:before { content: '\f09a'; } /* '' */
+.ui-github:before { content: '\f09b'; } /* '' */
+.ui-rss:before { content: '\f09e'; } /* '' */
+.ui-pinterest:before { content: '\f0d2'; } /* '' */
+.ui-google:before { content: '\f0d5'; } /* '' */
+.ui-linkedin:before { content: '\f0e1'; } /* '' */
+.ui-comments:before { content: '\f0e6'; } /* '' */
+.ui-arrow-down:before { content: '\f123'; } /* '' */
+.ui-arrow-up:before { content: '\f126'; } /* '' */
+.ui-youtube:before { content: '\f167'; } /* '' */
+.ui-xing:before { content: '\f168'; } /* '' */
+.ui-dropbox:before { content: '\f16b'; } /* '' */
+.ui-stackoverflow:before { content: '\f16c'; } /* '' */
+.ui-instagram:before { content: '\f16d'; } /* '' */
+.ui-flickr:before { content: '\f16e'; } /* '' */
+.ui-bitbucket:before { content: '\f171'; } /* '' */
+.ui-tumblr:before { content: '\f173'; } /* '' */
+.ui-apple:before { content: '\f179'; } /* '' */
+.ui-windows:before { content: '\f17a'; } /* '' */
+.ui-android:before { content: '\f17b'; } /* '' */
+.ui-dribbble:before { content: '\f17d'; } /* '' */
+.ui-skype:before { content: '\f17e'; } /* '' */
+.ui-foursquare:before { content: '\f180'; } /* '' */
+.ui-trello:before { content: '\f181'; } /* '' */
+.ui-vkontakte:before { content: '\f189'; } /* '' */
+.ui-vimeo:before { content: '\f194'; } /* '' */
+.ui-slack:before { content: '\f198'; } /* '' */
+.ui-reddit:before { content: '\f1a1'; } /* '' */
+.ui-stumbleupon:before { content: '\f1a4'; } /* '' */
+.ui-delicious:before { content: '\f1a5'; } /* '' */
+.ui-digg:before { content: '\f1a6'; } /* '' */
+.ui-behance:before { content: '\f1b4'; } /* '' */
+.ui-spotify:before { content: '\f1bc'; } /* '' */
+.ui-soundcloud:before { content: '\f1be'; } /* '' */
+.ui-codeopen:before { content: '\f1cb'; } /* '' */
+.ui-git:before { content: '\f1d3'; } /* '' */
+.ui-slideshare:before { content: '\f1e7'; } /* '' */
+.ui-twitch:before { content: '\f1e8'; } /* '' */
+.ui-search:before { content: '\f1f5'; } /* '' */
+.ui-lastfm:before { content: '\f202'; } /* '' */
+.ui-forumbee:before { content: '\f211'; } /* '' */
+.ui-sellsy:before { content: '\f213'; } /* '' */
+.ui-shirtsinbulk:before { content: '\f214'; } /* '' */
+.ui-skyatlas:before { content: '\f216'; } /* '' */
+.ui-whatsapp:before { content: '\f232'; } /* '' */
+.ui-snapchat:before { content: '\f2ac'; } /* '' */
+.ui-phone:before { content: '\f2d2'; } /* '' */
+.ui-close:before { content: '\f2d7'; } /* '' */
+.ui-check:before { content: '\f383'; } /* '' */
+.ui-email:before { content: '\f384'; } /* '' */
+.ui-time:before { content: '\f3b3'; } /* '' */
