@@ -1,6 +1,7 @@
 <?php
 $social_links = get_option( 'social_links');
 $contact_info = get_option('contact_info');
+$brand_info = get_option('brand_info');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,9 +35,15 @@ $contact_info = get_option('contact_info');
 
 						<div class="nav__header">
 							<!-- Logo -->
-							<a href="index.html" class="logo-container flex-child">
-								<img class="logo" src="<?php bloginfo('template_directory') ?>/assets/img/logo.png" srcset="<?php bloginfo('template_directory') ?>/assets/img/logo.png 1x, <?php bloginfo('template_directory') ?>/assets/img/logo@2x.png 2x" alt="logo">
-							</a>
+							<?php if(!isset($brand_info)): ?>
+								<a href="index.html" class="logo-container flex-child">
+									<img class="logo" src="<?php bloginfo('template_directory') ?>/assets/img/logo.png" srcset="<?php bloginfo('template_directory') ?>/assets/img/logo.png 1x, <?php bloginfo('template_directory') ?>/assets/img/logo@2x.png 2x" alt="logo">
+								</a>
+							<?php else: ?>
+								<a href="index.html" class="logo-container flex-child">
+									<img class="logo" src="<?php echo $brand_info['brand_logo'] ?>" srcset="<?php echo $brand_info['brand_logo'] ?> 1x, <?php echo $brand_info['brand_logo'] ?> 2x" alt="logo">
+								</a>
+							<?php endif; ?>
 
 							<!-- Mobile toggle -->
 							<button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse" data-target="#navbar-collapse">

@@ -45,7 +45,7 @@ class MySettingsPage
         ?>
         <div class="wrap">
             <h1>My Theme Settings</h1>
-            <form method="post" action="options.php">
+            <form method="post" action="options.php" enctype="multipart/form-data">
             <?php
                 // This prints out all hidden setting fields
                 settings_fields('my_option_group');
@@ -115,14 +115,14 @@ class MySettingsPage
         add_settings_section(
             'contact_info_id', // ID
             'Contact Info Settings', // Title
-            array( $this, 'print_section_contact_info' ), // Callback
+            array($this, 'print_section_contact_info' ), // Callback
             'my-setting-admin' // Page
         );
 
         add_settings_field(
             'phone_number', // ID
             'Phone number', // Title 
-            array( $this, 'phone_number_callback' ), // Callback
+            array($this, 'phone_number_callback' ), // Callback
             'my-setting-admin', // Page
             'contact_info_id' // Section           
         );
@@ -130,7 +130,7 @@ class MySettingsPage
         add_settings_field(
             'phone_text', // ID
             'Phone Text', // Title 
-            array( $this, 'phone_text_callback' ), // Callback
+            array($this, 'phone_text_callback' ), // Callback
             'my-setting-admin', // Page
             'contact_info_id' // Section           
         );
@@ -138,7 +138,7 @@ class MySettingsPage
         register_setting(
             'my_option_group', // Option group
             'brand_info', // Option name
-            'handle_logo_upload' // logo upload function
+            array($this, 'handle_logo_upload') // logo upload function
         );
 
         add_settings_section(
@@ -178,20 +178,27 @@ class MySettingsPage
     }
 
     public function handle_logo_upload($input) {
+        $this->brandOptions = get_option('brand_info');
+        $new_input= array();
+        if(isset($_FILES['brand_logo']['tmp_name'])) {
+            $uploadedfile = $_FILES['brand_logo'];
+            $upload_overrides = array('test_form' => false);
 
-        if(!empty($_FILES['brand_info[brand_logo]']['tmp_name'])) {
-            $file_to_upload = $_FILES['brand_info[brand_logo]'];
-            $move_logo = wp_handle_upload($file_to_upload, array('test_form' => FALSE));
-            if($move_logo) {
-                $wp_upload_dir = wp_upload_dir();
-                $attachment = array(
-                    'guid' => $wp_upload_dir['url']. '/' . basename($move_logo['file']),
-                    'post_mime_type' => $move_logo['type'],
-                    'post_title' => $move_logo['file']
-                );
-                $logo_attach_id = wp_insert_attachment( $attachment, $move_logo['file']);
-                
+            $movefile = wp_handle_upload( $uploadedfile, $upload_overrides );
+
+            if($movefile && empty($movefile['error'])) {
+                // remove previously uploaded file by getting information from options table
+                if($this->brandOptions) {
+                    unlink($this->brandOptions['brand_logo_path']);
+                }
+                $new_input['brand_logo'] = $movefile['url'];
+                $new_input['brand_logo_path'] = $movefile['file'];
+                $input = $new_input;
+            } else {
+                $input = $this->brandOptions;
             }
+        } else {
+            $input = $this->brandOptions;
         }
 
         return $input;
@@ -277,9 +284,9 @@ class MySettingsPage
 
     public function brand_logo_callback()
     {
-        echo '<input type="file" id="brand_logo" name="brand_info[brand_logo]" />';
+        echo '<input type="file" id="brand_logo" name="brand_logo" />';
         if(isset($this->brandOptions['brand_logo'])) {
-            echo '<img src="' . esc_attr($this->brandOptions['brand_logo']) . '">';
+            echo '<br><img src="' . esc_attr($this->brandOptions['brand_logo']) . '">';
         } else {
             echo '<span>No logo chosen</span>';
         }
