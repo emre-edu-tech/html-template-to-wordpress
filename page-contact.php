@@ -1,3 +1,5 @@
 <?php get_header() ?>
-<p>This is general page.php template</p>
+
+This is contact page template
+
 <?php get_footer() ?>

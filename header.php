@@ -6,16 +6,10 @@ $brand_info = get_option('brand_info');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Sedona | Architecture HTML Template</title>
-
 	<meta charset="utf-8">
 	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="">
-
-	<!-- Google Fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Barlow:400,600%7COpen+Sans:400,400i,700' rel='stylesheet'>
-
     <?php wp_head() ?>
 
 </head>
@@ -36,11 +30,11 @@ $brand_info = get_option('brand_info');
 						<div class="nav__header">
 							<!-- Logo -->
 							<?php if(!isset($brand_info)): ?>
-								<a href="index.html" class="logo-container flex-child">
+								<a href="<?php echo get_home_url() ?>" class="logo-container flex-child">
 									<img class="logo" src="<?php bloginfo('template_directory') ?>/assets/img/logo.png" srcset="<?php bloginfo('template_directory') ?>/assets/img/logo.png 1x, <?php bloginfo('template_directory') ?>/assets/img/logo@2x.png 2x" alt="logo">
 								</a>
 							<?php else: ?>
-								<a href="index.html" class="logo-container flex-child">
+								<a href="<?php echo get_home_url() ?>" class="logo-container flex-child">
 									<img class="logo" src="<?php echo $brand_info['brand_logo'] ?>" srcset="<?php echo $brand_info['brand_logo'] ?> 1x, <?php echo $brand_info['brand_logo'] ?> 2x" alt="logo">
 								</a>
 							<?php endif; ?>

@@ -1,3 +1,5 @@
 <?php get_header() ?>
-<p>This is general page.php template</p>
+
+Not found
+
 <?php get_footer() ?>
